@@ -85,11 +85,12 @@ export const Total = styled.div`
 
   span {
     color: #999;
+    font-size: 20px;
     font-weight: bold;
   }
 
   strong {
     font-size: 28px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
 `;
