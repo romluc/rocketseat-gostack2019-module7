@@ -27,10 +27,10 @@ class Home extends Component {
     });
   }
 
-  handleAppProduct = product => {
-    const { addToCart } = this.props;
+  handleAppProduct = id => {
+    const { addToCartRequest } = this.props;
 
-    addToCart(product);
+    addToCartRequest(id);
   };
 
   render() {
@@ -47,7 +47,7 @@ class Home extends Component {
 
             <button
               type="button"
-              onClick={() => this.handleAppProduct(product)}
+              onClick={() => this.handleAppProduct(product.id)}
             >
               <div>
                 <MdAddShoppingCart size={16} color="#FFF" />
