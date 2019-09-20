@@ -30,6 +30,10 @@ export const Container = styled.div`
       }
     }
 
+    button.disabled {
+      cursor: not-allowed;
+    }
+
     button.shopping {
       background: #335588;
 
@@ -104,4 +108,10 @@ export const Total = styled.div`
     font-size: 28px;
     margin-left: 10px;
   }
+`;
+
+export const EmptyCartText = styled.h1`
+  text-align: center;
+  color: #777;
+  font-size: 40px;
 `;
