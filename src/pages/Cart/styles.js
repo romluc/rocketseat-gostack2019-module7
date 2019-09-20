@@ -13,7 +13,6 @@ export const Container = styled.div`
     align-items: center;
 
     button {
-      background: #008b8b;
       color: #fff;
       border: 0;
       padding: 12px 20px;
@@ -21,9 +20,21 @@ export const Container = styled.div`
       font-weight: bold;
       text-transform: uppercase;
       transition: background 0.2s;
+    }
+
+    button.order {
+      background: #008b8b;
 
       &:hover {
-        background: ${darken(0.03, '#008b8b')};
+        background: ${darken(0.1, '#008b8b')};
+      }
+    }
+
+    button.shopping {
+      background: #335588;
+
+      &:hover {
+        background: ${darken(0.1, '#335588')};
       }
     }
   }
